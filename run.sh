@@ -1,0 +1,1 @@
+qemu -fda build/main_floppy.img
