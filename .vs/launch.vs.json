@@ -1,0 +1,29 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cppgdb",
+      "name": "Run (QEMU)",
+
+      "project": "CMakeLists.txt",
+      "projectTarget": "isida_run",
+
+      "debuggerConfiguration": "gdb",
+
+      "program": "/usr/bin/qemu-system-x86_64",
+
+      "args": [
+        "-fda",
+        "${cmake.binaryDir}/main_floppy.img"
+      ],
+
+      "cwd": "${cmake.binaryDir}/",
+
+      "env": {},
+
+      "noDebug": false,
+      "externalConsole": true
+    }
+  ]
+}
