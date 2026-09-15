@@ -3,7 +3,7 @@
 
 void __attribute__((cdecl)) _cstart_(uint16_t bootDrive) {
 
-	printf("Hello %s%s   %d", "wor", "ld!", 55);
+	printf("Hello %o", 0x4F9E);
 
 	for (;;) {}
 }
